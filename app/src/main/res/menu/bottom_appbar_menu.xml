@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/fragmentHome"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+
+    <item android:id="@+id/fragmentCollections"
+        android:title="Categories"
+        android:icon="@drawable/options_lines"/>
+
+    <item android:id="@+id/fragmentMessages"
+        android:title="Messages"
+        android:icon="@drawable/love"/>
+
+    <item android:id="@+id/fragmentSearch"
+        android:icon="@drawable/search"
+        android:title="" />
+
+
+
+</menu>

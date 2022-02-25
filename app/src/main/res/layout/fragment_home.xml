@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.main.FragmentHome">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/item_height_56dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#858282"
+            android:layout_alignParentBottom="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium_500"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="@dimen/margin_padding_24"
+            app:cardElevation="0dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/human_image"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:scrollbars="none">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="categories"
+                android:fontFamily="@font/roboto_medium_500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_20"
+                android:layout_marginStart="@dimen/margin_padding_16"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_8"
+                android:id="@+id/recyclerView"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/margin_padding_8"
+                android:paddingStart="@dimen/margin_padding_8"
+                android:paddingEnd="@dimen/margin_padding_16"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurants"
+                android:fontFamily="@font/roboto_medium_500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_20"
+                android:layout_marginStart="@dimen/margin_padding_16"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_8"
+                android:id="@+id/recyclerView2"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/margin_padding_8"
+                android:paddingStart="@dimen/margin_padding_8"
+                android:paddingEnd="@dimen/margin_padding_16"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
